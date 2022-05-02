@@ -1,0 +1,133 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: $secondary-bg-color;
+    color: $primery-white-color;
+
+    & .container {
+        display: flex;
+        align-items: baseline;  
+    }
+    &__box--address {
+        margin-right: 70px;
+    }
+    &__logo {
+        margin-bottom: 20px;
+        display: block;
+      
+        font-family: $secondary-font;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.19;
+        text-decoration: none;
+        &--first-part {
+            color: $accent-color;
+        }
+        &--second-part {
+            color: $primery-white-color;
+        }
+    }
+    &__contacts {
+        font-style: normal;
+    }
+    &__address {
+        margin-bottom: 9px;
+        color: $primery-white-color;
+        line-height: 24px;
+    }
+    &__item {
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__mail, &__tel {
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: $animation;
+        &:hover, &:focus {
+            color: $accent-color;
+        }
+    }
+}
+.social {
+    &__text {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: flex;
+        column-gap: 10px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: $primery-title-color;
+        background: $fourth-bg-color;
+        transition: $animation;
+        &:hover, &:focus {
+            background-color: $accent-color;
+        }
+    }
+    &__icon {
+        fill: $primery-white-color;
+    }
+}
+.email {
+    padding: 0;
+    color: $primery-text-color;
+    height: 86px;
+    width: 570px;
+    margin-left: 93px;
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primery-white-color;
+    }
+    &__form {
+        display: flex;
+        align-items: center; 
+    }
+    &__input {
+        width: 358px;
+        height: 50px;
+      
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding-left: 16px;
+        background: transparent;
+        color: $primery-text-color;
+    }
+    &__btn {
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        margin-left: 12px;
+      
+        background-color: $accent-color;
+        color: $primery-white-color;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        transition: $animation;
+    }
+    &__icon {
+        margin-left: 10px;
+        transform: translateY(25%);
+    }
+}

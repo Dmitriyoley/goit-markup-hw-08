@@ -1,0 +1,29 @@
+.contact {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+
+    &__item {
+        margin-right: 50px;
+    }
+
+    &__mail, &__tel {
+        display: flex;
+        align-items: center;
+        color: $primery-text-color;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: $animation;
+        
+        &:hover, &:focus {
+            color: $accent-color;
+        }
+    }
+    &__icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+  }
