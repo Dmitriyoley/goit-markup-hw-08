@@ -965,14 +965,15 @@ textarea {
   gap: 30px;
 }
 
-.page__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .page__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .page__item {
     width: 354px;
-    height: 440px;
   }
 }
 
