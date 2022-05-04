@@ -12,20 +12,47 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../images/background-image.jpg);
+        url(../images/mob/bg_mob.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media (min-resolution: 2dppx) {
+        background-image: url(../images/mob/bg_mob2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tab/bg_tab.jpg);
+        @media (min-resolution: 2dppx) {
+            background-image: url(../images/tab/bg_tab2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/desc/bg_desc.jpg);
+    
+        @media (min-resolution: 2dppx) {
+            background-image: url(../images/desc/bg_desc2x.jpg);
+        }
+    }
 
     &__title { 
 
-        width: 696px;
+        width: 100%;
         margin: 0 auto;
       
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 1.36;
+        line-height: 42px;
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+           
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 
     &__btn {

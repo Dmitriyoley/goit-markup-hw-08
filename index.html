@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 7</title>
+    <title>Module 8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,6 +19,53 @@
             <nav class="header__navi navi">
                 <a href="./index.html" lang="en" class="navi__logo"><span class="navi__logo--first-part">Web</span><span
                         class="navi__logo--second-part">Studio</span></a>
+                <button type="button" class="menu-btn" data-menu-button aria-expanded="false">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню" >
+                        <use href="/images/icons.svg#icon-close-black" class="icon-cross"></use>
+                        <use href="/images/icons.svg#icon-menu" class="icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu" data-menu>
+                    <ul class="mobile-menu__nav">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link is-active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__group">
+                        <ul class="mobile-menu__contact">
+                            <li class="mobile-menu__contact-item">
+                                <a class="mobile-menu__contact-link" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contact-item">
+                                <a class="mobile-menu__contact-link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                            
+                        </ul>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="">Instagram</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="">Twitter</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="">Facebook</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <ul class="navi__list">
                     <li class="navi__item"><a href="./index.html" class="navi__link current">Студия</a></li>
                     <li class="navi__item"><a href="./portfolio.html" class="navi__link">Портфолио</a></li>
@@ -155,17 +202,17 @@
             <h2 class="title product__title">Чем мы занимаемся</h2>
             <ul class="product__list">
                 <li class="product__item">
-                    <img src="./images/img1.jpg" alt="работа на компьютере" width="370" height="294" class="product__img">
+                    <img srcset="./images/product/img.jpg 1x, ./images/product/img2x.jpg 2x" src="./images/product/img.jpg" alt="работа на компьютере" width="370" height="294"  class="product__img">
                     <div class="product__info">
                         Десктопные приложения
                     </div>
                 </li>
                 <li class="product__item">
-                    <img src="./images/img2.jpg" alt="работа на телефоне" width="370" height="294" class="product__img">
+                    <img srcset="./images/product/img-1.jpg 1x, ./images/product/img2x-1.jpg 2x" src="./images/product/img-1.jpg" alt="работа на телефоне" width="370" height="294" class="product__img">
                     <div class="product__info">Мобильные приложения</div>
                 </li>
                 <li class="product__item">
-                    <img src="./images/img3.jpg" alt="работа на планшете" width="370" height="294" class="product__img">
+                    <img srcset="./images/product/img-2.jpg 1x, ./images/product/img2x-2.jpg 2x" src="./images/product/img-2.jpg" alt="работа на планшете" width="370" height="294" class="product__img">
                     <div class="product__info">Дизайнерские решения</div>
                 </li>
             </ul>
@@ -174,11 +221,11 @@
         
         <!--Our team-->
         <section class="team section">
-            <div class="container">
-            <h2 class="title team-title">Наша команда</h2>
+            <div class="container team__container">
+            <h2 class="title team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/img4.jpg" alt="Фото Игорь" width="270" height="260" class="team__photo">
+                    <img srcset="./images/team/img.jpg 1x, ./images/team/img2x.jpg 2x " src="./images/team/img.jpg" alt="Фото Игорь" width="450" class="team__photo">
                     <div class="team__box">
                         <h3  class="team__name">Игорь Демьяненко</h3>
                         <p  class="team__major">Product Designer</p>
@@ -215,7 +262,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img5.jpg" alt="Фото Ольга" width="270" height="260" class="team__photo">
+                    <img srcset="./images/team/img-1.jpg 2x, ./images/team/img2x-1.jpg 2x " src="./images/team/img-1.jpg" alt="Фото Ольга" width="450"  class="team__photo">
                     <div class="team__box">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__major">Frontend Developer</p>
@@ -252,7 +299,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img6.jpg" alt="Фото Николай" width="270" height="260" class="team__photo">
+                    <img srcset="./images/team/img-2.jpg 1x, ./images/team/img2x-2.jpg 2x " src="./images/team/img-2.jpg" alt="Фото Николай" width="450" class="team__photo">
                     <div class="team__box">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__major">Marketing</p>
@@ -289,7 +336,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img7.jpg" alt="Фото Михаил" width="270" height="260" class="team__photo">
+                    <img srcset="./images/team/img-3.jpg 1x, ./images/team/img2x-3.jpg 2x" src="./images/team/img-3.jpg" alt="Фото Михаил" width="450" class="team__photo">
                     <div class="team__box">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p class="team__major">UI Designer</p>
@@ -443,5 +490,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -1,15 +1,25 @@
 .clients {
-    &__list {
-        display: flex;
-    }
-    &__item {
-        &:not(:last-child){
-            margin-right: 30px;
+    &__title {
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+            line-height: 33px;
         }
     }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        @media screen and (min-width: 768px) {
+        
+        }
+    }
+
     &__link {
         display: flex;
-        width: 170px;
+        width: 210px;
         height: 92px;
         border: 1px solid $primery-icon-color;
         border-radius: 4px;
@@ -20,6 +30,9 @@
         &:hover, &:focus {
             color: $accent-color;
             border-color: $accent-color;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 170px;
         }
     }
     &__icon {

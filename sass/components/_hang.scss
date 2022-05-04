@@ -1,36 +1,72 @@
 .hang {
     &__list {
-        display: flex;
-        align-items: center;
-    }
-    &__item {
-        margin-right: 30px;
-        &:last-child {
-            margin-right: 0;
+
+        display: block;
+        
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
         }
     }
+    
+    &__item {
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+
     &__box {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
-        width: 270px;
         height: 120px;
         background-color: $third-bg-color;
-        border-radius: 4px;
+        border-radius: 4px;  
+        
+
+        @media screen and (min-width: 768px) {
+            width: 354px;   
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 270px;
+            height: 120px;
+            background-color: $third-bg-color;
+            border-radius: 4px;   
+        }
     }
     &__subtitle {
         margin-bottom: 10px;
         font-size: 14px;
-      
+
+        text-align: center;
         color: $primery-title-color;
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            
+        }
     }
     &__text {
         font-weight: 400;
         line-height: 1.71;
-        width: 270px;
     }
 }

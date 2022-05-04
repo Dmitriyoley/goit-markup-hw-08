@@ -3,8 +3,13 @@
     align-items: center;
 
     &__list {
-        display: flex;
-        align-items: center;
+        @media screen and (max-width: 767px) {
+            display: none;    
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            
+        }
     }
     &__logo {
         font-family: $secondary-font;
@@ -12,7 +17,7 @@
         font-weight: 700;
         line-height: 1.19;
 
-        margin-right: 93px;
+        margin-right: 88px;
 
         &--first-part {
             color: $accent-color;
@@ -20,6 +25,9 @@
 
         &--second-part {
             color: $primery-title-color;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
         }
 
     }
@@ -59,5 +67,5 @@
     left: 0;
     border-radius: 2px;
     transition: $animation;
-  }
-  
+}
+
