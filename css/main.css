@@ -317,6 +317,12 @@ textarea {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
@@ -643,14 +649,13 @@ textarea {
 .hang__subtitle {
   margin-bottom: 10px;
   font-size: 14px;
-  text-align: center;
   color: #212121;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .hang__subtitle {
     text-align: center;
   }
@@ -904,6 +909,10 @@ textarea {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   margin-bottom: 40px;
   gap: 8px;
   -ms-flex-wrap: wrap;
@@ -1156,7 +1165,6 @@ textarea {
 
 .footer__contacts {
   font-style: normal;
-  margin-bottom: 60px;
 }
 
 .footer__address {
@@ -1188,7 +1196,6 @@ textarea {
 
 .social__box {
   width: 208px;
-  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1199px) {
